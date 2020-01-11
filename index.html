@@ -1,41 +1,46 @@
 <!doctype html>
 <html lang="en-us">
+
 <head>
-<meta charset="UTF-8">
-<link href="css/styles.css" rel="stylesheet">
-<title>The Web Myster: Home</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="JS.ja" rel="script">
+  <title>The Web Myster: Home</title>
 </head>
 
 <body>
-<header>
-  <h1>The Web Myster</h1>
-  <h2>Best Coder in Town</h2>
-</header>
+  <header>
+    <h1 id="myname">Kisuk Jeong</h1>
+    
 
-<nav>
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#">Agenda</a></li>
-    <li><a href="#">Schedule</a></li>
-</ul>
+  </header>
 
-</nav>
 
-<main>
-<h1>Home</h1>
-<img src="images/idaho.jpg" alt="Photo of Idaoh">
-<p>dihdihdohdoih</p>
-<ol>
-  <li>Bootstrap</li>
-  <li>Materialize</li>
-  <li>Foundation</li>
-</ol>
 
-</main>
+  <main>
+    <h1>CIT230: Assignment Portal</h1>
+    <img src="images/family.jpg" alt="Photo of my family">
+   
+    <ol>
+      <li>Lesson 02: <a href="index.html">Assignment Link</a></li>
+      <li>Lesson 03: <a href="#">Assignment Link</a></li>
+      <li>Lesson 04: <a href="#">Link|</a><a href="#">Link</a></li>
+    </ol>
 
-<footer>
-&copy; Kisuk Jeong 2018 
-</footer>
+  </main>
+
+  <footer>
+    &copy; 2020 | Kisuk Jeong | Seoul, Korea | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+    <br>Last Updated: <span id="date"></span>
+    <script>
+      let today = new Date();
+      let date = today.getDate()+'/'+String (today.getMonth() +1).padStart(2, '0')+'/'+today.getFullYear()+' '+today.getHours()+':'+today.getMinutes()+':'+today.getSeconds();
+      document.getElementById("date").textContent = date;
+    </script> 
+  </footer>
 
 </body>
+
 </html>

@@ -1,27 +1,48 @@
-header h1 {
-    color: #0076bb;
+header {
+    background-color: aqua;
+    height: 4em;
+    max-width: 70%;
+    text-decoration: solid;
+    vertical-align: middle;
+    
 }
-nav ul {padding: 0;}
-nav ul li {
-    float: left;
-    list-style-type: none;
+main img {
+    position: relative;
+    bottom: 8em;
+    float: right;
+    
 }
-
-nav ul li a{
-    display: block;
-    padding: .5rem 1rem;
-    background-color: #f89c1f;
+body {
+    max-width: 70%;
+    margin-left: 20%;
+}
+main {
+    max-width: 70%;
 }
 
 main h1 {
     clear: both;
 }
 
-main img {
-    float: right;
+main ol li{
+    list-style-type: disc;
 }
 
 footer {
     text-align: center;
     clear: both;
+    background-color: aqua;
+    max-width: 70%;
+
+}
+
+#date {
+    color: #d4af37;
+}
+
+#myname {
+    color: black;
+    height: 2em;
+    font-size: 3em;
+    padding-left: 20%;
 }
