@@ -2,9 +2,7 @@ header {
     background-color: aqua;
     height: 4em;
     max-width: 800px;
-   
     text-decoration: solid;
-    vertical-align: middle;
     border-radius:15px;
 }
 main img {
