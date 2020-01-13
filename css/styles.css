@@ -4,6 +4,7 @@ header {
     max-width: 800px;
     text-decoration: solid;
     border-radius:15px;
+    font-family: 'Russo One', sans-serif;
 }
 main img {
     position: relative;
@@ -24,6 +25,7 @@ main h1 {
 
 main ol li{
     list-style-type: disc;
+    font-family: 'Montserrat', sans-serif;
 }
 
 footer {
