@@ -1,35 +1,49 @@
-header h1 {
-    color: black;
-    background-color: skyblue;
-    height: 2em;
-    font-size: 2em;
-    text-align: center;
+header {
+    background-color: aqua;
+    height: 4em;
+    max-width: 800px;
+    text-decoration: solid;
+    border-radius:15px;
 }
-#kisuk {
-    float: right;
+main img {
     position: relative;
+    bottom: 8em;
+    float: right;
+    
 }
-nav ul {padding: 0;}
-nav ul li {
-    float: left;
-    list-style-type: none;
-}
-
-nav ul li a{
-    display: block;
-    padding: .5rem 1rem;
-    background-color: #09f128;
+body {
+    max-width: 800px;
+    
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 main h1 {
     clear: both;
 }
 
-main img {
-    float: right;
+main ol li{
+    list-style-type: disc;
 }
 
 footer {
     text-align: center;
     clear: both;
+    background-color: aqua;
+    max-width: 800px;
+    
+    border-radius:10px;
+    height: 4em;
+    line-height: 1.5;
+}
+
+#date {
+    color: #d4af37;
+}
+
+#myname {
+    color: black;
+    height: 2em;
+    font-size: 3em;
+    padding-left: 20%;
 }
