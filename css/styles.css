@@ -1,5 +1,13 @@
 header h1 {
-    color: #0076bb;
+    color: black;
+    background-color: skyblue;
+    height: 2em;
+    font-size: 2em;
+    text-align: center;
+}
+#kisuk {
+    float: right;
+    position: relative;
 }
 nav ul {padding: 0;}
 nav ul li {
@@ -10,7 +18,7 @@ nav ul li {
 nav ul li a{
     display: block;
     padding: .5rem 1rem;
-    background-color: #f89c1f;
+    background-color: #09f128;
 }
 
 main h1 {
