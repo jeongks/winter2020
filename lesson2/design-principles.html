@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Lesson 2: Design Principles | BYU-Idaho | Kisuk Jeong</title>
+    <meta name="description" content="This is an assignment of week 2 in CIT 230">
+
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%7cRusso+One&display=swap">
+
+</head>
+
+<body>
+    <header>
+        <h1>Lesson 2: Design Principles</h1>
+    </header>
+
+    <main>
+        <img src="images/naver.jpg" alt="mobile view screenshot of naver">
+        <img src="images/blizzard.jpg" alt="mobile view screenshot of blizzard">
+        <h2>PARC: Proximity</h2>
+        <ol>
+            <li>Lesson 02: <a href="https://www.naver.com/">naver</a></li>
+            <li>Lesson 03: <a href="https://www.blizzard.com/en-us/">blizzard</a></li>
+        </ol>
+        <h3>Naver</h3>
+        <p>In naver.com and blizzard.com webpages, I can found great proximity. <br>
+           In Naver webpages items that are related are gathered together so <br> 
+           it makes easier to find things that I want to use.</p>
+        <h3>Blizzard</h3>
+        <p>In blizzard webpage, each contents are gathered together with related <br>
+           contents such as games and news or new updates for a game. Through the <br>
+           proximity they provide users where to find information what an user wants.</p>
+        <br>
+        <img src="images/adobe.jpg" alt="mobile view of screenshot of adobe">
+        <h2>Visual Hierarchy</h2>
+        <ol>
+            <li><a href="https://www.adobe.com/">adobe</a></li>
+        </ol>
+        <h3>Adobe</h3>
+        <p>Adobe website shows benefits of Visual Hierarchy. big and colorful images <br>
+           are guiding the direction where should our eyes move. It makes easier to <br>
+           users to navigate the website by using visual hierarchy.</p>
+
+        <br>
+        
+        <img src="images/google.jpg" alt="mobile view of screenshot of google">
+        <img src="images/lg.jpg" alt="mobile view of screenshot of LG">
+        
+        <h2>White Space and Clean Design</h2>
+        <ol>
+            <li><a href="https://www.google.com/">google</a></li>
+            <li><a href="http://www.lgcorp.com/">LG</a></li>
+        </ol>
+        <p>In google and LG webpage, they both well display the white space. <br>
+           Since the right amount of white space gives clear view and help <br>
+           users to focus on information what they are receiving.</p>
+    </main>
+
+    <footer>
+        &copy; 2020 | Kisuk Jeong | Seoul, Korea | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <br>Last Updated: <span id="date"></span>
+        <script>
+            let today = new Date();
+            let date = today.getDate() + '/' + String(today.getMonth() + 1).padStart(2, '0') + '/' + today
+            .getFullYear() + ' ' + today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+            document.getElementById("date").textContent = date;
+        </script>
+    </footer>
+
+</body>
+
+
+</html>
