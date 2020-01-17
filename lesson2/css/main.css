@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-h1 {
-    
-}
-
 header,
 main,
 footer {
@@ -12,7 +8,8 @@ footer {
     max-width: 45rem;
 }
 
-header, footer {
+header,
+footer {
     text-align: center;
     background-color: aqua;
     color: #000;
@@ -38,8 +35,14 @@ h3 {
 }
 
 p {
+    text-align: justify;
     font-family: cursive;
 }
+
+section:nth-child(3) {
+    grid-column: span 1;
+}
+
 
 body {
     font-size: 16px;
@@ -47,22 +50,60 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #333;
     height: 100%;
-    
+
 }
 
 main {
-    background-color: bisque;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
 }
 
 main img {
-    float: right;
+    
     width: 80px;
     margin: auto;
     margin-top: 20px;
     margin-right: 10px;
-    
+    box-shadow: 0 0 30px rgb(0, 35, 49);
+
+}
+main section {
+    border: 1px solid rgb(5, 151, 248);
+    padding: 0 1rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    background-color: rgb(155, 214, 241);
 }
 
 main ol li {
-    font-size: 1.2em;;
+    font-size: 1.2em;
+    list-style-type: none;
+    
+}
+
+/*Tablet view **********************************/
+@media only screen and (min-width: 37.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section:nth-child(3){
+        display: block;
+        
+    }
+
+}
+
+/*desktop view **********************************/
+@media only screen and (min-width: 60em) {
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section:nth-child(3){
+        grid-column: span 1;
+    }
 }
