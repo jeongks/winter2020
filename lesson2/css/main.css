@@ -1,18 +1,14 @@
 @charset "utf-8";
 
 header,
-main,
 footer {
     margin: 0 auto;
     padding: 0.75rem;
-    max-width: 45rem;
-}
-
-header,
-footer {
+    max-width: 100%;
     text-align: center;
     background-color: aqua;
     color: #000;
+    border-radius: 10px;
 }
 
 footer {
@@ -54,18 +50,18 @@ body {
 }
 
 main {
-    
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
-
+main ol {
+    font-size: 1.2rem;
+}
 main img {
-    
-    width: 80px;
+    width: 80%;
     margin: auto;
-    margin-top: 20px;
-    margin-right: 10px;
+    margin-top: 2%;
+    margin-left: 10%;
     box-shadow: 0 0 30px rgb(0, 35, 49);
 
 }
