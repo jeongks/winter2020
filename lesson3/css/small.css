@@ -1,0 +1,63 @@
+
+
+
+/***************  HEADER  ************************/
+header {
+    padding: .5rem 2%;
+    background-color: #0084ff;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+}
+
+/***************  BODY  **************************/
+
+
+/*************** NAV ***********************/
+nav {
+    background-color: rgb(51, 207, 247);
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    display: flex;
+    color: #fff;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul a:hover {
+    background-color: darkcyan;
+
+}
+
+nav ul li.active a {
+    background-color: rgb(58, 163, 163);
+    color: #fff;
+}
+
+
+
+/*************** MAIN *********************/
+main {
+    padding: .5rem 2%;
+}
+
+/*************** FOOTER **********************/
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
