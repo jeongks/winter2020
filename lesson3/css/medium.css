@@ -1,0 +1,20 @@
+@media only screen and (min-width: 35rem){
+    nav {
+        overflow: hidden;
+    }
+    
+    nav ul a {
+        display: block;
+        font-size: 1.5rem;
+        
+        
+    
+    }
+    nav ul li{
+        float: left;
+        width: 20%;
+    }
+    
+   
+    
+}

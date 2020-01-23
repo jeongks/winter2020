@@ -2,7 +2,8 @@
 
 
 /***************  HEADER  ************************/
-header {
+header,
+footer {
     padding: .5rem 2%;
     background-color: #0084ff;
 }
@@ -17,7 +18,7 @@ header img {
 
 /*************** NAV ***********************/
 nav {
-    background-color: rgb(51, 207, 247);
+    background-color: #33cff7;
     
 }
 nav ul {
@@ -29,7 +30,7 @@ nav ul {
 nav ul a {
     display: flex;
     color: #fff;
-    padding: .5rem;
+    padding: .5rem 2%;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
@@ -37,12 +38,13 @@ nav ul a {
 
 nav ul a:hover {
     background-color: darkcyan;
-
+    
 }
 
 nav ul li.active a {
-    background-color: rgb(58, 163, 163);
-    color: #fff;
+    background-color: #3aa3a3;
+    color: #111;
+    font-weight: bold;
 }
 
 
@@ -52,7 +54,41 @@ main {
     padding: .5rem 2%;
 }
 
+main section {
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
+
+main section p {
+    padding-top: 25%;
+    font-size: 2rem;
+}
+
+#blue {
+    
+    background-color: #0084ff;
+    border: 1px solid #0084ff;
+}
+
+#darkcyan {
+    
+    background-color: #3aa3a3;
+    border: 1px solid #3aa3a3;
+}
+
+#cyan {
+    
+    background-color: #33cff7;
+    border: 1px solid #33cff7;
+}
+
+
 /*************** FOOTER **********************/
+
 
 
 .clearfix:after {
