@@ -5,11 +5,6 @@ header img {
     margin: 10px 10px 0 2%;
 }
 
-header,
-footer {
-    overflow: hidden;
-}
-
 #headerWrapper,
 #footerWrapper {
     background-color: #0084ff;
