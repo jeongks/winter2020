@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+header img {
+    float: left;
+    margin: 10px 10px 0 2%;
+}
+
+header,
+footer {
+    overflow: hidden;
+}
+
+#headerWrapper,
+#footerWrapper {
+    background-color: #0084ff;
+}
+
+#hero {
+    width: 100%;
+    position: static;
+}
+
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: burlywood;
+    border: 1px solid black;
+}
+
+main {
+    text-align: justify;
+}
+/********* swapping images for article************/
+#article2 {
+    display: none;
+}
+#article1 {
+    display: block;
+    margin: 0 auto;
+}
+/********* iframe swapping *******************/
+#iframe1 {
+    display: none;
+}
+#iframe2 {
+    height: 20%;
+}
+
+/************nav ********************/
+nav ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#navWrapper {
+    background-color: #33cff7;
+}
+.active{
+    background-color: #3aa3a3;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
