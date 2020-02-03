@@ -8,9 +8,19 @@
 .text-block {
     font-size: 0.8vw;
 }
+
+#sitename{
+    font-size: 3rem;
+}
+#siteslogan{
+    font-size: 2rem;
+}
+
 nav ul {
     display: flex;
 }
+
+
 
 
 /********* swapping images for article************/

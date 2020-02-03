@@ -9,6 +9,13 @@
     .text-block {
         font-size: 2vw;
     }
+
+    #sitename{
+        font-size: 2rem;
+    }
+    #siteslogan{
+        font-size: 1rem;
+    }
     
     /************** nav****************/
     nav ul {

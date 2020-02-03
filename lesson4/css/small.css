@@ -3,6 +3,7 @@
 header img {
     float: left;
     margin: 10px 10px 0 2%;
+    width: 15%;
 }
 
 #headerWrapper,
@@ -26,6 +27,13 @@ footer {
 h1, h2, h3, h4, h5 {
     font-family: 'Merriweather', serif;
 }
+
+#sitename{
+    font-size: 1rem;
+}
+#siteslogan{
+    font-size: .7rem;
+}
 /************banner image and text block ********************/
 .container {
     width: 100%;
@@ -40,6 +48,7 @@ h1, h2, h3, h4, h5 {
     color: #eee;
     padding: 5px;
     font-size: 2.5vw;
+    opacity: .8;
 }
 
 #hero {
