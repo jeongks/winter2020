@@ -72,13 +72,9 @@ main p {
 #article1 {
     display: none;
 }
-<<<<<<< HEAD
-#article2 {
-=======
 
 #article1 {
     width: 100%;
->>>>>>> e214385cec062c8d81dc168052dc239b780307d7
     display: block;
     margin: 0 auto;
 }

@@ -24,7 +24,7 @@
 
     .hide li {
         display: block;
-        flex: 1 1 100;
+        flex: 1 1 auto;
     }
 
     button {
