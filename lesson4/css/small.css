@@ -33,10 +33,10 @@ main {
     text-align: justify;
 }
 /********* swapping images for article************/
-#article2 {
+#article1 {
     display: none;
 }
-#article1 {
+#article2 {
     display: block;
     margin: 0 auto;
 }

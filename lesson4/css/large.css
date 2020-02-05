@@ -1,25 +1,29 @@
-@media only screen and (min-width: 60em){
+@media only screen and (min-width: 60em) {
 
-nav ul {
-    display: flex;
-}
+    nav ul {
+        display: flex;
+    }
 
 
-/********* swapping images for article************/
-#article2 {
-    display: block;
-    margin:0 auto;
-}
-#article1 {
-    display: none;
-    
-}
-/********* iframe swapping *******************/
-#iframe1 {
-    display: block;
-    float: right;
-}
-#iframe2 {
-    display:none
-}
+    /********* swapping images for article************/
+    #article1 {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #article2 {
+        display: none;
+
+    }
+
+    /********* iframe swapping *******************/
+    #iframe1 {
+        display: block;
+        float: right;
+    }
+
+    #iframe2 {
+        display: none
+    }
+
 }
