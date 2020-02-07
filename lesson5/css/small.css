@@ -21,6 +21,20 @@ footer {
 #wrapper {
     width: 100%;
 }
+/************* message ********************/
+div#message {
+    background-color: #ff88aa;
+    border: 2px solid red;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+div.hideme {
+    display: none;
+}
+div.showme {
+    display: block;
+}
 
 /************* font apply to headers***************/
 
@@ -34,6 +48,11 @@ h1, h2, h3, h4, h5 {
 #siteslogan{
     font-size: .7rem;
 }
+/************five days forecast ******************************/
+section.forecast {
+    display: none;
+}
+
 /************banner image and text block ********************/
 .container {
     width: 100%;
