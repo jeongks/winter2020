@@ -19,7 +19,10 @@
 nav ul {
     display: flex;
 }
-
+/****************main text ******************/
+main div.mainwrapper {
+    word-break: normal;
+}
 
 
 
