@@ -1,8 +1,7 @@
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("hide");
 }
-
-/** footer date */
+/** current date */
 var today = new Date();
                     var weekday = new Array(7);
                     weekday[0] = "Sunday";
@@ -30,4 +29,14 @@ var today = new Date();
                     var date = day + ',' + today.getDate() + ' ' + month + ' ' + today.getFullYear();
                     document.getElementById("date").textContent = date;
 
+/******* message */
 
+var today = new Date();
+
+const dayNumber = today.getDay();
+const element = document.getElementById("message");
+if (dayNumber == 5){
+    element.classList.add("showme");
+} else {
+    element.classList.add("hideme");
+}
