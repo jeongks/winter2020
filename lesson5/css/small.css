@@ -27,6 +27,8 @@ div#message {
     border: 2px solid red;
     font-weight: bold;
     font-size: 1.5rem;
+    text-align: center;
+    
 }
 
 div.hideme {
@@ -80,8 +82,12 @@ section.forecast {
 }
 
 /************** main body texts**************/
-main {
+main div.mainwrapper {
+    padding-left: 3%;
+    padding-right: 4%;
     text-align: justify;
+    word-break: break-all;
+    line-height: 2;
 }
 
 main p {
