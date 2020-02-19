@@ -13,6 +13,7 @@ function getFontSize(x) {
     }
 }
 
-var x = window.matchMedia("(max-wdith: 34.99rem)")
-getFontSize(x)
-x.addListener(getFontSize)
+var x = window.matchMedia("(max-wdith: 34.99rem)");
+getFontSize(x);
+x.addListener(getFontSize);
+
