@@ -1,6 +1,11 @@
-head, picture {
-    display: grid;
-    grid-template-columns: 1fr;
+div.center {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+picture {
+    display: block;
 }
 img {
     min-width: 50px;
