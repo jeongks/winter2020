@@ -79,8 +79,16 @@ section.forecast {
 }
 
 #banner img {
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
+}
+picture{
+    display: block;
+    width:96%;
+    margin: 0 2%;
+}
+main picture img {
+    width:100%;
 }
 
 /************** main body texts**************/

@@ -83,9 +83,13 @@
                 <div class="container">
                     <div id="banner">
                         <picture>
-                            <img src="images/preston200.jpg" alt="hero" sizes="100vw" srcset="images/preston200.jpg 300w,
+                            <source media="(max-width: 200px" srcset="images/preston200.jpg">
+                            <source media="(max-width: 500px" srcset="images/preston500.jpg">
+                            <source media="(max-width: 800px" srcset="images/preston800.jpg">
+                            <!-- <img src="images/preston200.jpg" alt="hero" sizes="100vw" srcset="images/preston200.jpg 300w,
                                     images/preston500.jpg 800w,
-                                    images/preston800.jpg 1400w">
+                                    images/preston800.jpg 1400w"> -->
+                            <img src="images/preston.jpeg" alt="preston">
                         </picture>
                     </div>
                     <div class="text-block">
