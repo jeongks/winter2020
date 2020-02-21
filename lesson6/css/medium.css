@@ -46,7 +46,10 @@
     button {
         display: none;
     }
-
+    /************* gallery **************/
+    #gallerybody {
+        grid-template-columns: 1fr 1fr;
+    }
     
 
     /*********** article image******************/

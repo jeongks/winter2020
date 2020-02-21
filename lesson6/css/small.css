@@ -141,8 +141,19 @@ nav a:hover {
 }
 
 /***********gallery**************/
+#gallerybody {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
-
+picture img{
+    border: 3px solid skyblue;
+}
+picture img:hover {
+    box-shadow: 0 0 30px #33cff7;
+    
+}
 
 
 /************toggle**************/

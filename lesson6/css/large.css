@@ -24,7 +24,10 @@ main div.mainwrapper {
     word-break: normal;
 }
 
-
+/*********** gallery **************/
+#gallerybody {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 /********* swapping images for article************/
 #article2 {
