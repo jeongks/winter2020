@@ -58,12 +58,12 @@ if('IntersectionObserver' in window) {
         });
     });
 
-    imagesLoader.forEach((img) => {
+    images.forEach((img) => {
         imgObserver.observe(img);
     });
 }
 else {
-    imagesLoader.forEach((img) =>{
+    images.forEach((img) =>{
         loadImages(img);
     });
 }
