@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 
-
     <script type="text/javascript" src="js/menuToggle.js" defer></script>
+    <script src="lazy.js" defer></script>
 
 </head>
 
@@ -43,86 +43,39 @@
         </div>
 
         <main>
-            <h1>Gallery</h1>
-            <div class="container">
-                <div id="banner">
-                    <img src="images/hero.jpg" id="hero" alt="hero">
-                </div>
-                <div class="text-block">
-                    <h3>Weather Summary</h3>
-                    <h4>High: xx</h4>
-                    <h4>Low: xx</h4>
-                    <h4>Wind: xx</h4>
-                </div>
-
+            <div class="gallerybody">
+                <h1>Weather Gallery</h1>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/chilly.jpg" alt="chilly">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/cloudy.jpg" alt="cloudy">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/freezing.jpg" alt="freezing">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/heatwave.jpg" alt="heat wave">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/lightening.jpg" alt="lightening">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/rainy.jpg" alt="rainy">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/scorching.jpg" alt="scorching">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/snowy.jpg" alt="snowy">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/sunny.jpg" alt="sunny">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/warm.jpg" alt="warm">
+                </picture>
             </div>
-
-            <h2>WHO Statement Regarding Cluster of Pneumonia Cases in Wuhan, China</h2>
-            <img src="images/article2.jpg" id="article2" alt="article">
-            <p>Chinese authorities have made a preliminary determination of a novel (or new) coronavirus, identified
-                in a
-                hospitalized person with pneumonia in Wuhan. Chinese investigators conducted gene sequencing of the
-                virus,
-                using an isolate from one positive patient sample. Preliminary identification of a novel virus in a
-                short
-                period of time is a notable achievement and demonstrates China’s increased capacity to manage new
-                outbreaks.</p>
-            <p>
-                Initial information about the cases of pneumonia in Wuhan provided by Chinese authorities last week
-                –
-                including the occupation, location and symptom profile of the people affected – pointed to a
-                coronavirus
-                (CoV) as a possible pathogen causing this cluster. Chinese authorities subsequently reported that
-                laboratory
-                tests ruled out SARS-CoV, MERS-CoV, influenza, avian influenza, adenovirus and other common
-                respiratory
-                pathogens.</p>
-            <p>
-                Coronaviruses are a large family of viruses with some causing less-severe disease, such as the
-                common cold,
-                and others more severe disease such as MERS and SARS. Some transmit easily from person to person,
-                while
-                others do not. According to Chinese authorities, the virus in question can cause severe illness in
-                some
-                patients and does not transmit readily between people.</p>
-            <p>
-                Globally, novel coronaviruses emerge periodically in different areas, including SARS in 2002 and
-                MERS in
-                2012. Several known coronaviruses are circulating in animals that have not yet infected humans. As
-                surveillance improves more coronaviruses are likely to be identified.</p>
-            <p>
-                China has strong public health capacities and resources to respond and manage respiratory disease
-                outbreaks.
-                In addition to treating the patients in care and isolating new cases as they may be identified,
-                public
-                health officials remain focused on continued contact tracing, conducting environmental assessments
-                at the
-                seafood market, and investigations to identify the pathogen causing the outbreak.</p>
-            <p>
-                In the coming weeks, more comprehensive information is required to understand the current status and
-                epidemiology of the outbreak, and the clinical picture. Further investigations are also required to
-                determine the source, modes of transmission, extent of infection and countermeasures implemented.
-                WHO
-                continues to monitor the situation closely and, together with its partners, is ready to provide
-                technical
-                support to China to investigate and respond to this outbreak.</p>
-            <p>
-                The preliminary determination of a novel virus will assist authorities in other countries to conduct
-                disease
-                detection and response. Over the past week, people with symptoms of pneumonia and reported travel
-                history to
-                Wuhan have been identified at international airports.</p>
-            <p>
-                WHO does not recommend any specific measures for travellers. WHO advises against the application of
-                any
-                travel or trade restrictions on China based on the information currently available.</p>
-            <p>
-                source: <a
-                    href="https://www.who.int/china/news/detail/09-01-2020-who-statement-regarding-cluster-of-pneumonia-cases-in-wuhan-china"
-                    target="_blank">who.int</a>
-            </p>
-            <img src="images/article1.jpg" id="article1" alt="article">
-
             <div id=contactWrapper>
                 <h2>Contact Us</h2>
 
@@ -159,7 +112,7 @@
         <div id="footerWrapper">
             <footer>
                 &copy; Kisuk Jeong &bullet; <span id="date"></span>
-                
+
             </footer>
         </div>
     </div>
