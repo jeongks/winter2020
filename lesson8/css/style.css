@@ -1,4 +1,8 @@
-
+body {
+	font-family: 'Ubuntu', sans-serif ;
+	color: #000;
+	
+}
 
 
 table, tr, th, td {
@@ -30,6 +34,7 @@ table tr.data2 {
 
 #heading {
     background-color: #628ca6;
+    font-size: 2em;
 }
 
 #begin, #end{
