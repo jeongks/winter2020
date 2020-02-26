@@ -20,27 +20,29 @@ table, tr, th, td {
 #foot {
     font-size: 0.8em;
 }
-table tr:nth-child(6) td:nth-child(3){
+
+/***************table data***************/
+table tbody th{
+    background-color: #628ca6;
+    color: #eee;
+    font-weight: bold;
+}
+table tbody tr {
+    background-color: #68bdb1;
+}
+table tbody tr.data1 {
+    background-color: #c2e9e4;
+}
+
+table tr:nth-child(5) td:nth-child(3){
     background-color: #628ca6;
     
 }
-/***************table data***************/
-table tr.data1 {
-    background-color: #c2e9e4;
-}
-table tr.data2 {
-    background-color: #68bdb1;
-}
 
-
-#heading {
-    background-color: #628ca6;
-
+thead th {
+    font-size: 1.6em;
 }
-#begin{
-    font-size: 1.5em;
-}
-#begin, #end{
+thead, tfoot{
     background-color: #7fb9c2;
 }
 
