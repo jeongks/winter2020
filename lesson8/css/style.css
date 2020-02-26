@@ -1,0 +1,38 @@
+
+
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+
+#black {
+    font-style: italic;
+}
+
+#foot {
+    font-size: 0.8em;
+}
+table tr:nth-child(6) td:nth-child(3){
+    background-color: #628ca6;
+    
+}
+/***************table data***************/
+table tr.data1 {
+    background-color: #c2e9e4;
+}
+table tr.data2 {
+    background-color: #68bdb1;
+}
+
+
+#heading {
+    background-color: #628ca6;
+}
+
+#begin, #end{
+    background-color: #7fb9c2;
+}
+
