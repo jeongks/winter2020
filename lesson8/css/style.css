@@ -17,7 +17,7 @@ table, tr, th, td {
     font-style: italic;
 }
 
-#foot {
+tfoot {
     font-size: 0.8em;
 }
 
