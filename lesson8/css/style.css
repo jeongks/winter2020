@@ -1,7 +1,8 @@
 body {
 	font-family: 'Ubuntu', sans-serif ;
 	color: #000;
-	
+    margin: 0 auto;
+    width: 50%;
 }
 
 
@@ -34,9 +35,11 @@ table tr.data2 {
 
 #heading {
     background-color: #628ca6;
-    font-size: 2em;
-}
 
+}
+#begin{
+    font-size: 1.5em;
+}
 #begin, #end{
     background-color: #7fb9c2;
 }
