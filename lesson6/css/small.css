@@ -7,6 +7,12 @@ header img {
     
 }
 
+header h1, h2 {
+    margin: 0 0 10px 3%; 
+}
+
+
+
 #headerWrapper,
 #footerWrapper {
     background-color: #0084ff;
@@ -73,7 +79,60 @@ section.forecast {
     font-size: 2vw;
     opacity: .8;
 }
+/************* form *****************/
+form fieldset {
+    margin: 1rem 3%;
+    border: 2px solid #3aa3a3;
+    border-radius: 10px;
+    padding: .8rem;
+}
+form legend {
+    color: #3aa3a3;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
 
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #0084ff;
+    font-size: .8rem;
+}
+
+form label.top input, label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 91%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+}
+
+form label.sbs input {
+    font-size: 1rem;
+    padding: .75rem;
+    margin-right: 10px;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #33cff7;
+    border-radius: 1rem;
+    color: white;
+    margin: 0 0 2rem 3%;
+    width: 94%;
+    max-width: 22rem;
+}
+
+/*********** hero image ******************/
 #hero {
     width: 100%;
 }
@@ -100,8 +159,14 @@ main div.mainwrapper {
     line-height: 2;
 }
 
+main h1 {
+    margin: 10px 3%;
+    font-size: 1.2rem;
+}
+
 main p {
     font-family: sans-serif;
+    margin: 0 3%;
 }
 /********* swapping images for article************/
 #article2 {

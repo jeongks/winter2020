@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 body {
-	font-family: 'Ubuntu', sans-serif ;
-	color: #000;
-    margin: 0 auto;
+	font-family: 'Ubuntu', sans-serif;
+    margin: 100px auto;
     width: 50%;
 }
 
@@ -13,8 +14,20 @@ table, tr, th, td {
     padding: 5px;
 }
 
-#black {
-    font-style: italic;
+table {
+    box-shadow: 10px 10px 15px #628ca6;
+}
+
+thead {
+    background-color: #628ca6;
+    color: white;
+}
+
+thead .title {
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 1.6em;
+    font-weight: bold;
 }
 
 tfoot {
@@ -22,26 +35,28 @@ tfoot {
 }
 
 /***************table data***************/
-table tbody th{
+/* table th{
     background-color: #628ca6;
     color: #eee;
     font-weight: bold;
-}
-table tbody tr {
-    background-color: #68bdb1;
-}
-table tbody tr.data1 {
-    background-color: #c2e9e4;
-}
+} */
+
 
 table tr:nth-child(5) td:nth-child(3){
     background-color: #628ca6;
     
 }
-
-thead th {
-    font-size: 1.6em;
+tbody tr:nth-child(even){
+    background-color: #e7ffed;
 }
+tbody tr:nth-child(odd){
+    background-color: #e7f0ed;
+}
+table tr:nth-child(6) td:nth-child(1){
+    font-style: italic;
+}
+
+
 thead, tfoot{
     background-color: #7fb9c2;
 }
