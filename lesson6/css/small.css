@@ -222,7 +222,14 @@ nav a:hover {
 
 picture img{
     border: 3px solid skyblue;
+
 }
+
+/* [data-src] {
+    min-width: 50px;
+    min-height: 50px;
+} */
+
 picture img:hover {
     box-shadow: 0 0 30px #33cff7;
     

@@ -1,11 +1,11 @@
 const images = document.querySelectorAll("[data-src]");
 
-function loadImages(img){
+function loadImages(img) {
     const src = img.getAttribute("data-src");
     img.onload = () => {
         img.removeAttribute('data-src');
     };
-    if (!src){
+    if (!src) {
         return;
     }
 
@@ -13,26 +13,28 @@ function loadImages(img){
 }
 
 const imgOptions = {
-    threshold: 0,
+    threshold: 1,
     rootMargin: "0px 0px 10px 0px"
 };
 
-if('IntersectionObserver' in window) {
+if ('IntersectionObserver' in window) {
     const imgObserver = new IntersectionObserver((items, imgObserver) => {
         items.forEach((item) => {
-            if(!items.isIntersecting){
+            if (!item.isIntersecting) {
+                return;
+            } else {
                 loadImages(item.target);
                 imgObserver.unobserve(item.target);
             }
+
         });
     }, imgOptions);
 
     images.forEach((img) => {
         imgObserver.observe(img);
     });
-}
-else {
-    images.forEach((img) =>{
+} else {
+    images.forEach((img) => {
         imgObserver.observe(img);
     });
 }
