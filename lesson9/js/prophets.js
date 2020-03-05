@@ -14,11 +14,23 @@ fetch(requestURL)
 
             let card = document.createElement('section');
             let h2 = document.createElement('h2');
+            let pbirth = document.createElement('p');
+            let pnumofchildren = document.createElement('p');
+            let img = document.createElement('img');
 
             h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+            pbirth.textContent = "Birth Date: " + prophets[i].birthdate;
+            pnumofchildren.textContent = "Number of Children: " + prophets[i].numofchildren;
+
+            img.setAttribute('src', prophets[i].imageurl);
+            img.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname);
+
             card.appendChild(h2);
+            card.appendChild(pbirth);
+            card.appendChild(pnumofchildren);
+            card.appendChild(img);
 
             document.querySelector('div.cards').appendChild(card);
-            image.setAttribute('src', prophets[i].imageurl);
+            
         }
     });
