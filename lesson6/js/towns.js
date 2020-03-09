@@ -8,7 +8,7 @@ fetch(requestURL)
     .then(function (jsonObject) {
         console.table(jsonObject);
         const towns = jsonObject['towns'];
-        for (let i = 0; i < towns.length; i++) {
+        for (let i = 0; i < 3; i++) {
             
 
             let card = document.createElement('section');
