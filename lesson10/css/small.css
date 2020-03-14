@@ -1,0 +1,273 @@
+@charset "utf-8";
+/************* header *******************/
+header img {
+    float: left;
+    margin: 10px 10px 10px 3%;
+    width: 15%;
+    
+}
+
+header h1, h2 {
+    margin: 0 0 10px 3%; 
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather', serif;
+}
+
+#sitename{
+    font-size: 1rem;
+    padding-top: 3%;
+}
+#siteslogan{
+    font-size: .7rem;
+}
+
+/*********** header and footer **********/
+#headerWrapper,
+#footerWrapper {
+    background-color: #0084ff;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;    
+}
+
+#wrapper {
+    width: 100%;
+}
+
+
+/************nav ********************/
+button {
+    min-height: 44px;
+    margin-left: 3%;
+}
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+nav .active {
+    background-color: #3aa3a3;
+}
+
+nav a {
+    display: block;
+    padding: .2rem 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+}
+#navWrapper {
+    background-color: #33cff7;
+}
+nav a:hover {
+    background-color: #0084ff;
+}
+
+
+/************* message ********************/
+div#message {
+    background-color: #ff88aa;
+    border: 2px solid red;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+div.hideme {
+    display: none;
+}
+div.showme {
+    display: block;
+}
+
+
+/************five days forecast ******************************/
+/*----------- five days forcast -------------*/
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#forecast div {
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+#forecast div h5{
+    background-color: #3aa3a3;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+/************banner image and text block ********************/
+.container {
+    width: 100%;
+    position: relative;
+}
+
+#text-block {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #3aa3a3;
+    color: #eee;
+    padding: 5px;
+    font-size: 2vw;
+    opacity: .8;
+    margin: 0 2%;
+}
+
+#hero {
+    width: 100%;
+}
+
+#banner img {
+    width: 100%;
+    overflow: hidden;
+}
+picture{
+    display: block;
+    width:96%;
+    margin: 0 2%;
+}
+main picture img {
+    width:100%;
+}
+
+/************* form *****************/
+form fieldset {
+    margin: 1rem 3%;
+    border: 2px solid #3aa3a3;
+    border-radius: 10px;
+    padding: .8rem;
+}
+form legend {
+    color: #3aa3a3;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #0084ff;
+    font-size: .8rem;
+}
+
+form label.top input, label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 91%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+}
+
+form label.sbs input {
+    font-size: 1rem;
+    padding: .75rem;
+    margin-right: 10px;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #33cff7;
+    border-radius: 1rem;
+    color: white;
+    margin: 0 0 2rem 3%;
+    width: 94%;
+    max-width: 22rem;
+}
+
+
+/************** main body texts**************/
+main div.mainwrapper {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+    word-break: break-all;
+    line-height: 2;
+}
+
+main h1 {
+    margin: 10px 3%;
+    font-size: 1.2rem;
+}
+
+main p {
+    font-family: sans-serif;
+    margin: 0 3%;
+}
+
+
+/* [data-src] {
+    min-width: 50px;
+    min-height: 50px;
+} */
+
+picture img:hover {
+    box-shadow: 0 0 30px #33cff7;
+    
+}
+
+
+/************toggle**************/
+.hide li {
+    display: none;
+
+}
+
+.hide a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+/************** contact us**********/
+
+
+#contactWrapper {
+    background-color: #33cff7;
+}
+
+#contact {
+    grid-template-columns: 1fr;
+}
+
+#address, #contactinfo {
+    color: #eee;
+    background-color: #3aa3a3;
+}
+
+iframe {
+    display:none;
+    width: 100%;
+    height: 100px; 
+    
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
