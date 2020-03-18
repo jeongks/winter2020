@@ -116,11 +116,7 @@ footer {
     div.cards img{
         max-width: 60%;
     }
-    /*container = vertical flex box*/
-    /*indivisual city  = horigental flex box*/
-    /*each city needs to have two boxes: one for text and one for img*/
     
-    /*nth odd row-reverse*/
     .textblock {
         display: flex;
         flex-direction: row;
