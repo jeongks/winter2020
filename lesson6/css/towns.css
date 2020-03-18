@@ -43,6 +43,12 @@ p{
     color: white;
     text-overflow: hidden;
 }
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+}
 
 .cards {
     display: grid;
@@ -54,12 +60,12 @@ p{
     padding: 10px;
     border: 1px solid #555;
     background-color: #50a1e2;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .cards img {
-    max-width: 100%;
-    margin: 10px 0 0 0;
+    width: 100%;
+    /* margin: 10px 0 0 0; */
 }
 
 footer {
@@ -101,8 +107,32 @@ footer {
     button {
         display: none;
     }
-    .cards {
-        grid-template-columns: 1fr 1fr;
+
+    /************* section alternate ************/
+    div.cards {
+        display: flex;
+        flex-direction: column;
+    }
+    div.cards img{
+        max-width: 60%;
+    }
+    /*container = vertical flex box*/
+    /*indivisual city  = horigental flex box*/
+    /*each city needs to have two boxes: one for text and one for img*/
+    
+    /*nth odd row-reverse*/
+    .textblock {
+        display: flex;
+        flex-direction: row;
+    }
+    div.textblock section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    div.cards div.textblock:nth-child(odd){
+        flex-direction: row-reverse;
     }
 
 }
@@ -112,6 +142,7 @@ footer {
         width: 50%;
         margin: 0 auto;
     }
+    
 
     #sitename{
         font-size: 3rem;
@@ -119,8 +150,17 @@ footer {
     #siteslogan{
         font-size: 2rem;
     }
-    .cards {
+    div.cards {
+        display: grid;
+        max-width: none;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    div.textblock {
+        display: block;
+        margin: 10px;
+    }
+    div.cards img {
+        max-width: 100%;
     }
 
 }

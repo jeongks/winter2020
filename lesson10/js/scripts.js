@@ -7,6 +7,7 @@ const mydate = new Date();
 
 const todaynumber =   mydate.getDay();
 
+
 const myweekday = new Array(7);
 myweekday[0] = "Sunday";
 myweekday[1] = "Monday";
@@ -17,6 +18,9 @@ myweekday[5] = "Friday";
 myweekday[6] = "Saturday";
 
 let forcastDayNumber = todaynumber;
+
+
+let utctime = mydate.getUTCHours();
 
 
 //Go fetch it and then wait for a response.
@@ -32,7 +36,7 @@ fetch(apiURL)
 
     for (i = 0; i <mylist.length; i++){
       var time = mylist[i].dt_txt;
-      if (time.includes("17:00:00")){
+      if (time.includes("18:00:00")){
 
         forcastDayNumber += 1;
         if ( forcastDayNumber === 7){forcastDayNumber = 0;}
@@ -55,7 +59,9 @@ fetch(apiURL)
 
         document.getElementById("forecast").appendChild(theDay);
         
-        let currentWeather = document.createElement("h4");
+      } 
+      
+      let currentWeather = document.createElement("h4");
         currentWeather.textContent = "Weather: " + weatherInfo.list[i].weather[0].main;
   
         let currentTemp = document.createElement("h4");
@@ -82,9 +88,6 @@ fetch(apiURL)
         textBlock.appendChild(windSpeed);
   
         document.getElementById("text-block").appendChild(textBlock);
-        
-      }
-     
 
     }
 

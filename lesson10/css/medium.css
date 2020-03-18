@@ -28,7 +28,7 @@ button {
 /*----------- MAIN --------------*/
 
 #forecast {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 /*----------- banner img and text block -------------*/

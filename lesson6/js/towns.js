@@ -10,8 +10,10 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
         for (let i = 0; i < 3; i++) {
             
-
-            let card = document.createElement('section');
+            let card = document.createElement('div');
+            card.className = "textblock";
+            let textcard = document.createElement('section');
+                        
         
             let h2 = document.createElement('h2');
             let h3 = document.createElement('h3');
@@ -29,14 +31,20 @@ fetch(requestURL)
             img.setAttribute('src', "images/"+towns[i].photo);
             img.setAttribute('alt', towns[i].name);
 
-            card.appendChild(h2);
-            card.appendChild(h3);
-            card.appendChild(prainfall);
-            card.appendChild(population);
-            card.appendChild(pevent);
+            
+            textcard.appendChild(h2);
+            textcard.appendChild(h3);
+            textcard.appendChild(prainfall);
+            textcard.appendChild(population);
+            textcard.appendChild(pevent);
+            card.appendChild(textcard);
             card.appendChild(img);
+            
+            
+
 
             document.querySelector('div.cards').appendChild(card);
+            // document.querySelector('div.cards').appendChild(articles);
             
         }
     });
