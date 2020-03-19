@@ -48,6 +48,12 @@ form label.sbs {
     
 }
 
+/*********** current weather ***************/
+#text-block {
+    margin-left: 10px;
+    font-size: 1.5vw;
+}
+
 /* ************* contact us ****************
 section {
     padding: 5px;

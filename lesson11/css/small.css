@@ -63,16 +63,19 @@ h1, h2, h3, h4, h5 {
 #forecast {
     display: grid;
     grid-template-columns: 1fr;
+    margin-bottom: 5px;
 }
 #forecast div {
     text-align: center;
     border: 1px solid #eee;
+    background-color: #33cff7;
 }
 
 #forecast div h5{
     background-color: #3aa3a3;
     margin: 0;
     padding: 1rem 0;
+    font-size: 1rem;
 }
 
 
@@ -82,14 +85,14 @@ h1, h2, h3, h4, h5 {
     position: relative;
 }
 
-.text-block {
+#text-block {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 20px;
     background-color: #3aa3a3;
     color: #eee;
     padding: 5px;
-    font-size: 2vw;
+    font-size: 3vw;
     opacity: .8;
 }
 /************* form *****************/
