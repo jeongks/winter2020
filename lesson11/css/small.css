@@ -59,9 +59,22 @@ h1, h2, h3, h4, h5 {
     font-size: .7rem;
 }
 /************five days forecast ******************************/
-section.forecast {
-    display: none;
+/*----------- five days forcast -------------*/
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr;
 }
+#forecast div {
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+#forecast div h5{
+    background-color: #3aa3a3;
+    margin: 0;
+    padding: 1rem 0;
+}
+
 
 /************banner image and text block ********************/
 .container {

@@ -23,6 +23,10 @@ nav ul {
 main div.mainwrapper {
     word-break: normal;
 }
+
+#forecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 /*************** form *******************/
 form label.sbs {
     padding: .4rem 0;
