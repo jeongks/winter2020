@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0, viewport-fit=cover">
+    <title>Gallery: JK Good Weather</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <script type="text/javascript" src="js/menuToggle.js" defer></script>
+    
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="headerWrapper">
+            <header class="clearfix">
+                <img src="images/logo.png" alt="logo">
+                <h1>JK good Weather</h1>
+                <h2>Your weather friend</h2>
+            </header>
+        </div>
+
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul class="hide" id="primaryNav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="preston.html">Youngdeok-dong</a></li>
+                    <li><a href="bora.html">Bora-dong</a></li>
+                    <li><a href="gome.html">Gome-dong</a></li>
+                    <li><a href="storm.html">Storm Center</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+
+            <h1>Weather Gallery</h1>
+            <div id="gallerybody">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/chilly.jpg" alt="chilly">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/cloudy.jpg" alt="cloudy">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/freezing.jpg" alt="freezing">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/lightening.jpg" alt="lightening">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/rainy.jpg" alt="rainy">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/scorching.jpg" alt="scorching">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/snowy.jpg" alt="snowy">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/sunny.jpg" alt="sunny">
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/warm.jpg" alt="warm">
+                </picture>
+            </div>
+            <div id=contactWrapper>
+                <h2>Contact Us</h2>
+
+                <div id="contact">
+                    <section id="both">
+                        <section id="address">
+                            <h5>Address:</h5>
+                            <p>7, Heungdeok 1-ro 79beon-gil, Giheung-gu, Yongin-si, Gyeonggi-do, 16954, Republic of
+                                Korea
+                            </p>
+                        </section>
+
+                        <section id="contactinfo">
+                            <h5>Phone:</h5>
+                            <p>(031) 321-1234</p>
+
+                            <h5>Email:</h5>
+                            <p>contact@yoururl.com</p>
+                        </section>
+                    </section>
+
+                    <section id="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25403.82157543456!2d127.06734737042832!3d37.260097917149814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5ad53a90fde5%3A0x4b8a9a21623c06ff!2sYeongdeok-dong%2C%20Giheung-gu%2C%20Yongin-si%2C%20Gyeonggi-do!5e0!3m2!1sen!2skr!4v1580377077422!5m2!1sen!2skr">
+                        </iframe>
+                    </section>
+
+                </div>
+            </div>
+
+
+
+        </main>
+        <div id="footerWrapper">
+            <footer>
+                &copy; Kisuk Jeong &bullet; <span id="date"></span>
+
+            </footer>
+        </div>
+    </div>
+    <script src="js/lazyload.js" defer></script>
+</body>
+
+</html>

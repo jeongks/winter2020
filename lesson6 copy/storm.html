@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0, viewport-fit=cover">
+    <title>Storm Center: JK Good Weather</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+
+    <script type="text/javascript" src="js/menuToggle.js" defer></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="headerWrapper">
+            <header class="clearfix">
+                <img src="images/logo.png" alt="logo">
+                <h1>JK Good Weather</h1>
+                <h2>Your weather friend</h2>
+            </header>
+        </div>
+
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul class="hide" id="primaryNav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="preston.html">Youngdeok-dong</a></li>
+                    <li><a href="bora.html">Bora-dong</a></li>
+                    <li><a href="gome.html">Gome-dong</a></li>
+                    <li class="active"><a href="storm.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <h1>Storm Center: storm report application</h1>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Reporter Information</legend>
+                    <label class="top">First Name*<input type="text" minlength="5" name="fname" required pattern="[A-Za-z]+"></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone Number<input type="tel" name="phonenumber" required></label>
+                    <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <div>Storm Information</div>
+                    <label class="top">Storm Date<input type="date" name="stormdate"></label>
+                    <label class="top">Storm Type<input list="stormType" name="stormtype"></label>
+                    <datalist id="stormType">
+                        <option value="flash flood">Flash Flood</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                    </datalist>
+                    <label class="top">Storm Severity<input type="range" name="severity" min="1" max="10"></label>
+                    <label class="top">Storm Region
+                        <select name="region">
+                                <option value="" disabled="disabled">Select Region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                            <option value="gome">Gome</option>
+                            <option value="bora">Bora</option>
+                        </select>
+                    </label>
+                    <div>Are You in Danger?</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="Maybe">Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="No">No</label>
+                    
+                </fieldset>
+                <input type="submit" value="Sedn My Storm Report" class="submitBtn">
+
+            </form>
+
+            
+
+            
+
+
+
+        </main>
+        <div id="footerWrapper">
+            <footer>
+                &copy; Kisuk Jeong &bullet; <span id="date"></span>
+
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

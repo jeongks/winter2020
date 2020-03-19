@@ -1,0 +1,162 @@
+
+body {
+    
+    margin: 0 auto;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#headerWrapper {
+    background-color: #0084ff;
+
+}
+
+header img {
+    float: left;
+    margin: 10px 10px 10px 2%;
+    width: 15%;
+    
+}
+
+header h1, h2 {
+    margin: 0 0 10px 2%; 
+}
+
+h2, p {
+    margin: 0 auto;
+}
+
+.cards h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.cards h3, p{
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-overflow: hidden;
+}
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.cards section {
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #50a1e2;
+    /* margin: 10px; */
+}
+
+.cards img {
+    width: 100%;
+    /* margin: 10px 0 0 0; */
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;    
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+@media only screen and (min-width: 35em){
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    #sitename{
+        font-size: 2rem;
+    }
+    #siteslogan{
+        font-size: 1.5rem;
+    }
+    nav ul {
+        display: flex;
+    }
+
+    .hide li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    button {
+        display: none;
+    }
+
+    /************* section alternate ************/
+    div.cards {
+        display: flex;
+        flex-direction: column;
+    }
+    div.cards img{
+        max-width: 60%;
+    }
+    
+    .textblock {
+        display: flex;
+        flex-direction: row;
+    }
+    div.textblock section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    div.cards div.textblock:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media only screen and (min-width: 60em){
+    #wrapper {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+
+    #sitename{
+        font-size: 3rem;
+    }
+    #siteslogan{
+        font-size: 2rem;
+    }
+    div.cards {
+        display: grid;
+        max-width: none;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    div.textblock {
+        display: block;
+        margin: 10px;
+    }
+    div.cards img {
+        max-width: 100%;
+    }
+
+}
