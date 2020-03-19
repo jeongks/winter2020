@@ -15,6 +15,8 @@
 
     <script type="text/javascript" src="js/menuToggle.js" defer></script>
     <scritp src="js/windchil.js"></scritp>
+    <script src="js/fishhaven.js"></script>
+    <script src="js/fishweather.js"></script>
 
 </head>
 
@@ -51,9 +53,9 @@
 
 
                 <div id="forecast">
-                    
+
                 </div>
-            
+
                 <div class="container">
                     <div id="banner">
                         <picture>
@@ -61,10 +63,13 @@
                         </picture>
                     </div>
                     <div id="text-block">
-                        
+
                     </div>
                 </div>
-                
+
+                <div class="events">
+
+                </div>
 
 
             </div>
@@ -76,10 +81,55 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
-        </script>
-      
-        <script src="js/fishhaven.js"></script>
-        <script src="js/fishweather.js"></script>
+    </script>
+
+
+    <script>
+        const eventURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+        fetch(eventURL)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (jsonObject) {
+                console.table(jsonObject);
+                const towns = jsonObject['towns'];
+
+
+
+                let card = document.createElement('div');
+                card.className = "event";
+                let eventcard = document.createElement('section');
+
+
+                let h2 = document.createElement('h2');
+                let event1 = document.createElement('p');
+                let event2 = document.createElement('p');
+                let event3 = document.createElement('p');
+
+
+
+                h2.textContent = towns[2].name + "Upcoming Event";
+                event1.textContent = towns[2].events[0];
+                event2.textContent = towns[2].events[1];
+                event3.textContent = towns[2].events[2];
+
+
+
+                eventcard.appendChild(h2);
+                eventcard.appendChild(event1);
+                eventcard.appendChild(event2);
+                eventcard.appendChild(event3);
+
+                card.appendChild(eventcard);
+
+
+
+
+                document.querySelector('div.events').appendChild(card);
+
+
+            });
+    </script>
 </body>
 
 </html>

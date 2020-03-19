@@ -229,6 +229,33 @@ nav a:hover {
     background-color: #0084ff;
 }
 
+/************ event **********/
+
+div.events {
+    border: 1px solid black;
+    border-radius: 15px 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: #3aa3a3;
+}
+
+div.events h2 {
+    width: 60%;
+    background-color: #33cff7;
+    border-radius: 10px 15px;
+    margin: 10px auto;
+    margin-top: 5px;
+}
+
+div.events p {
+    width: 60%;
+    background-color: aqua;
+    border-radius: 10px 15px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    
+}
+
 /***********gallery**************/
 #gallerybody {
     margin: 0 auto;
@@ -263,6 +290,8 @@ picture img:hover {
     text-align: center;
     padding: 10px;
 }
+
+
 
 /************** contact us**********/
 
