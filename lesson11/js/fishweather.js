@@ -1,4 +1,4 @@
-const fishURL = "http://api.openweathermap.org/data/2.5/weather?zip=83287,us&appid=f3dbc42cf2a8636fdc9d4f58d6627a4b&units=imperial";
+const fishURL = "//api.openweathermap.org/data/2.5/weather?zip=83287,us&appid=f3dbc42cf2a8636fdc9d4f58d6627a4b&units=imperial";
 
 fetch(fishURL)
     .then((response) => response.json())

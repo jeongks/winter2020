@@ -1,4 +1,4 @@
-const franklinURL = "http://api.openweathermap.org/data/2.5/weather?zip=83237,us&appid=f3dbc42cf2a8636fdc9d4f58d6627a4b&units=imperial";
+const franklinURL = "//api.openweathermap.org/data/2.5/weather?zip=83237,us&appid=f3dbc42cf2a8636fdc9d4f58d6627a4b&units=imperial";
 
 fetch(franklinURL)
     .then((response) => response.json())

@@ -1,4 +1,4 @@
-const prestonURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=f3dbc42cf2a8636fdc9d4f58d6627a4b&units=imperial";
+const prestonURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=f3dbc42cf2a8636fdc9d4f58d6627a4b&units=imperial";
 
 
 fetch(prestonURL)
