@@ -1,10 +1,10 @@
-const forecastURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=f3dbc42cf2a8636fdc9d4f58d6627a4b&units=imperial";
+const franklinURL = "http://api.openweathermap.org/data/2.5/weather?zip=83237,us&appid=f3dbc42cf2a8636fdc9d4f58d6627a4b&units=imperial";
 
-fetch(forecastURL)
+fetch(franklinURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
-
+        document.getElementById('franklinname').textContent = jsObject.name;
         let currentWeather = document.createElement("p");
         currentWeather.textContent = "Weather: " + jsObject.weather[0].main;
   
@@ -32,6 +32,5 @@ fetch(forecastURL)
         textBlock.appendChild(windSpeed);
   
         document.getElementById("text-block").appendChild(textBlock);
-
 
     });

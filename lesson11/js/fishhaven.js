@@ -1,5 +1,5 @@
 //ADD the key and change units to imperial
-const apiURL = "//api.openweathermap.org/data/2.5/forecast?zip=83263,us&appid=f3dbc42cf2a8636fdc9d4f58d6627a4b&units=imperial"
+const apiURL = "//api.openweathermap.org/data/2.5/forecast?zip=83287,us&appid=f3dbc42cf2a8636fdc9d4f58d6627a4b&units=imperial"
 
 
 const mydate = new Date();
@@ -20,6 +20,8 @@ myweekday[6] = "Saturday";
 let forcastDayNumber = todaynumber;
 
 
+
+
 //Go fetch it and then wait for a response.
 fetch(apiURL)
   .then((response) => response.json())
@@ -27,7 +29,6 @@ fetch(apiURL)
     //Once it comes back, display it to the console.
     console.log(weatherInfo);
     
-    document.getElementById('townname').textContent = weatherInfo.city.name;
 
     let mylist = weatherInfo.list;
 
