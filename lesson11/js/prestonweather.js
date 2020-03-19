@@ -21,7 +21,7 @@ fetch(prestonURL)
         humidity.textContent = "Humidity: " + jsObject.main.humidity + "\u0025";
   
         let windSpeed = document.createElement("p");
-        windSpeed.textContent = "Wind Speed: " + jsObject.wind.speed;
+        windSpeed.textContent = "WindSpeed: " + jsObject.wind.speed;
   
         let textBlock = document.createElement("div");
   
