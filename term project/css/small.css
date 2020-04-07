@@ -71,6 +71,10 @@ nav ul {
 
 nav .active {
     background-color: #fed766;
+    
+}
+nav .active a {
+    color: black;
 }
 
 nav a {
@@ -139,6 +143,10 @@ nav a:hover {
     text-align: center;
     margin-bottom: 1px;
     margin-block-start: 3px;
+}
+
+#forecastwrapper p {
+    color: black;
 }
 
 #forecast {
