@@ -1,4 +1,4 @@
-const sourceurl = "https://github.com/jeongks/jeongks.github.io/blob/master/term%20project/employees.json"
+const sourceurl = "https://jeongks.github.io/term%20project/data/employees.json"
 
 
 fetch(sourceurl)
@@ -7,24 +7,27 @@ fetch(sourceurl)
     //Once it comes back, display it to the console.
     console.log(employeeInfo);
     
-    let mylist = employeeInfo.list;
+    let mylist = employeeInfo.employees;
+    console.log(mylist[0]);
 
-    for (i = 0; i <mylist.length; i++){
+    for (let i = 0; i < mylist.length; i++){
         //employee image
         let imgcode = mylist[i].imagecode;
-        let srcofimg = "//github.com/jeongks/jeongks.github.io/tree/master/term%20project/images/" + imgcode + ".jpg";
+        let srcofimg = "https://jeongks.github.io/term%20project/images/" + imgcode + ".jpg";
         let employeeimg = document.createElement("img");
         employeeimg.src = srcofimg;
+        let employeeinformation = document.createElement("div");
+        employeeinformation.id = "information";
         //employee name
-        let employeeName = document.createElement("h5");
-        employeeName.textContent = "Name: " + mylist[i].name;
+        let employeeName = document.createElement("h2");
+        employeeName.textContent = mylist[i].name;
         //employee biography
-        let employeebiohead = document.createElement("h5");
+        let employeebiohead = document.createElement("h4");
         employeebiohead.textContent = "Biography";
         let employeebio = document.createElement("p");
         employeebio.textContent = mylist[i].biography;
         //employee email
-        let employeeemail = document.createElement("h5");
+        let employeeemail = document.createElement("h4");
         employeeemail.textContent = "e-Mail: " + mylist[i].email;
 
         
@@ -32,10 +35,11 @@ fetch(sourceurl)
 
         let employee = document.createElement("div");
         employee.appendChild(employeeimg);
-        employee.appendChild(employeeName);
-        employee.appendChild(employeebiohead);
-        employee.appendChild(employeebio);
-        employee.appendChild(employeeemail);
+        employeeinformation.appendChild(employeeName);
+        employeeinformation.appendChild(employeebiohead);
+        employeeinformation.appendChild(employeebio);
+        employeeinformation.appendChild(employeeemail);
+        employee.appendChild(employeeinformation);
 
         document.getElementById("employee").appendChild(employee);
        

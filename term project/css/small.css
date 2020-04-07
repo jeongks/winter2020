@@ -356,6 +356,28 @@ form input.submitbtn {
     margin: 0 2%;
 }
 
+#employee img {
+    width:96%;
+    margin: 3px 2%;
+}
+
+#information {
+    background-color: #009fb7;
+    margin: 0 2%;
+}
+#information h2, p{
+    color: #f4f4f8;
+}
+
+#information h2,h4 {
+    margin: 10px 2%;
+}
+
+#information p {
+    margin: 5px 2%;
+    overflow: hidden;
+}
+
 /*-------- FOOTER -------*/
 footer {
     text-align: center;
