@@ -1,45 +1,45 @@
-const sourceurl = "//"
+const sourceurl = "https://github.com/jeongks/jeongks.github.io/blob/master/term%20project/employees.json"
 
 
-
-let forcastDayNumber = todaynumber;
-
-fetch(apiurl)
+fetch(sourceurl)
   .then((response) => response.json())
-  .then((weatherInfo) => {
+  .then((employeeInfo) => {
     //Once it comes back, display it to the console.
-    console.log(weatherInfo);
+    console.log(employeeInfo);
     
-    let mylist = weatherInfo.list;
+    let mylist = employeeInfo.list;
 
     for (i = 0; i <mylist.length; i++){
-      var time = mylist[i].dt_txt;
-      if (time.includes("18:00:00")){
-
-        forcastDayNumber += 1;
-        if ( forcastDayNumber === 7){forcastDayNumber = 0;}
-
-        let dayName = document.createElement("h5");
-        dayName.textContent = myweekday[forcastDayNumber];
-
-        let theTemp = document.createElement("p");
-        theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
+        //employee image
+        let imgcode = mylist[i].imagecode;
+        let srcofimg = "//github.com/jeongks/jeongks.github.io/tree/master/term%20project/images/" + imgcode + ".jpg";
+        let employeeimg = document.createElement("img");
+        employeeimg.src = srcofimg;
+        //employee name
+        let employeeName = document.createElement("h5");
+        employeeName.textContent = "Name: " + mylist[i].name;
+        //employee biography
+        let employeebiohead = document.createElement("h5");
+        employeebiohead.textContent = "Biography";
+        let employeebio = document.createElement("p");
+        employeebio.textContent = mylist[i].biography;
+        //employee email
+        let employeeemail = document.createElement("h5");
+        employeeemail.textContent = "e-Mail: " + mylist[i].email;
 
         
+        
 
-        let iconcode = weatherInfo.list[i].weather[0].icon;
-        let icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-        let theIcon = document.createElement("img");
-        theIcon.src = icon_path;
+        let employee = document.createElement("div");
+        employee.appendChild(employeeimg);
+        employee.appendChild(employeeName);
+        employee.appendChild(employeebiohead);
+        employee.appendChild(employeebio);
+        employee.appendChild(employeeemail);
 
-        let theDay = document.createElement("div");
-        theDay.appendChild(dayName);
-        theDay.appendChild(theTemp);
-        theDay.appendChild(theIcon);
-
-        document.getElementById("forecast").appendChild(theDay);
+        document.getElementById("employee").appendChild(employee);
        
-      } 
+      
       
       
     }
