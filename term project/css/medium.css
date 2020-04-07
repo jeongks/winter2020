@@ -1,0 +1,120 @@
+@media only screen and (min-width:321px){
+    
+    /* NAV */
+    nav ul {
+        display: flex;
+    }
+
+    .hide li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    #navbutton {
+        display: none;
+    }
+    
+    button.book {
+        position: relative;
+        background-color: #e6e6ea;
+
+    }
+    /* BANNER */
+    #text-block {
+        font-size: 1.5vw;
+    }
+
+    /* FORECAST 5DAY */
+    #forecastwrapper {
+        width: 96%;
+        margin: 0 2%;
+    }
+
+    #forecast {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    /* IMAGES */
+    .mainbody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 96%;
+        margin: 0 2%;
+        
+    }
+
+    .container {
+        background-color: #fed766;
+        border: 1px solid #e6e6ea;
+        margin: 3px;
+    }
+
+    #rafting img, #trip img, #telling img {
+        margin: 3px 2%;
+    }
+
+    
+
+    .book-text, .review-text {
+        display: block;
+        position: relative;
+        opacity: 100%;
+        bottom: 0px;
+        right: 0px;
+        width: 96%;
+        font-size: 2vw;
+        margin: 3px;
+        text-align: center;
+    }
+
+    
+
+    /* IFRAM */
+    iframe {
+        min-height: 200px;
+    }
+
+    /* RAFTING PAGE */
+    /* INFOWRAPPER */
+    #infowrapper {
+        width: 96%;
+        margin: 0 2%;
+    }
+
+    #begginerbutton.hide li, #intbutton.hide li, #advancedbutton.hide li, #groupbutton.hide li {
+        display: none;
+    }
+
+    /* TRAVELING PAGE */
+    /* PACKAGE */
+    #camping ul {
+        list-style-type: none;
+        padding: 0 10%;
+    }
+
+    .packageimg img {
+        width: 96%;
+        margin: 3px 2%; 
+    }
+    
+    /* PACAKGE MORE INFO BUTTON */
+    button.package {
+        display: flex;
+    }
+
+    #oneday.hide li, #twoday.hide li, #threeday.hide li {
+        display:none;
+    }
+
+
+    /* BOOKING PAGE */
+    .submitbtn {
+        background-color: #fe4a49;
+        margin-left: 50%;
+    }
+    
+    /* FOOTER */
+    footer {
+        font-size: 1.2rem;
+    }
+}

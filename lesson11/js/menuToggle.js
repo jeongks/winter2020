@@ -1,5 +1,5 @@
 function toggleMenu(){
-    document.getElementById("primaryNav").classList.toggle("hide");
+    document.getElementById("mainNav").classList.toggle("hide");
 }
 /** current date */
 var today = new Date();

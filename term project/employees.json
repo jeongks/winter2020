@@ -1,0 +1,34 @@
+{
+    "employees": [
+        {
+            "name": "John Smith",
+            "photo": "images/employee1.jpg",
+            "level": "5",
+            "expirence": "33",
+            "email": "john.smith@salmonriveradventure.com",
+            "biography": "He has been arborist for 15 years. Certified camping director. Certified rafting guide. Certified lifeguard. Researching on plants for food and madicine",
+            "image": "jeongks.github.io/term project/images/john.jpg"
+            
+        },
+        {
+            "name": "Julian Gomez",
+            "photo": "images/employee2.jpg",
+            "level": "3",
+            "expirence": "12",
+            "email": "julian.gomaz@salmonriveradventure.com",
+            "biography": "Certified camping director. Certified rafting guide. certified lifeguard. worked as rafting guide for 12 years and mostly guiding advanced course of the rafting. Master of the rafting. Formal American UDT",
+            "image": "jeongks.github.io/term project/images/julian.jpg"
+            
+            
+        },
+        {
+            "name": "Andrew Lee",
+            "photo": "images/employee3.jpg",
+            "level": "4",
+            "expirence": "19",
+            "email": "andrew.lee@salmonriveradventure.com",
+            "biography": "Formal American UDT. Certified camping director. Certified rafting guide. Certified lifeguard. Sucessfully survive from the survive in the wile for 100 days in amazon.",
+            "image": "jeongks.github.io/term project/images/andrew.jpg"
+        }
+    ]
+}

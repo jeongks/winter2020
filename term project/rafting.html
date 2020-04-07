@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0, viewport-fit=cover">
+    <title>Rafting: Salmon River Adventure</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Inria+Sans|Noto+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+
+    <script type="text/javascript" src="js/menuToggle.js" defer></script>
+    <script src="js/weatherfive.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="headerWrapper">
+            <header class="clearfix">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <h1 id="sitename">Salmon River Adventure</h1>
+                <h2 id="siteslogan">Soak in Nature</h2>
+            </header>
+        </div>
+
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()" id="navbutton">&#9776;</button>
+                <ul class="hide" id="mainNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="rafting.html">Rafting</a></li>
+                    <li><a href="traveling.html">Traveling</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="finding.html">Finding</a></li>
+                    
+
+                </ul>
+            </nav>
+        </div>
+        <main class="clearfix">
+            <div id="bannercontainer">
+                <div id="banner">
+                    <picture>
+                        <source media="(max-width: 320px)" srcset="images/raftingbannersmall.jpg">
+                        <source media="(max-width: 800px)" srcset="images/raftingbannermedium.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/raftingbannerlarge.jpg">
+                        <img src="images/raftingbannerlarge.jpg" alt="Whitewater rafting">
+                    </picture>
+
+                </div>
+            </div>
+            <div id="forecastwrapper">
+                <h5>5 Days weather in Salmon River</h5>
+                <div id="forecast"></div>
+            </div>
+            <div class="mainbody">
+                <div class="container">
+                    <div id="begginer">
+                        <a href="rafting.html"><img src="images/begginer.jpg" alt="whitewater rafting begginer"></a>
+                    </div>
+                    <a href="booking.html">
+                        <div class="book-text">
+                            <button class="book">Book Begginer</button>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="container">
+                    <div id="intermediate">
+                        <a href="traveling.html"><img src="images/intermediate.jpg"
+                                alt="whitewater rafting intermediate"></a>
+                    </div>
+                    <a href="booking.html">
+                        <div class="book-text">
+                            <button class="book">Book Intermediate</button>
+                        </div>
+                    </a>
+
+                </div>
+                <div id="map" class="container">
+                    <div id="advanced">
+                        <a href=""><img src="images/advanced.jpg" alt="whitewater rafting advanced"></a>
+                    </div>
+
+                    <a href="booking.html">
+                        <div class="book-text">
+                            <button class="book">Book Advanced</button>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="container">
+                    <div id="group">
+                        <img src="images/group.jpg" alt="group rafting">
+                    </div>
+                    <a href="Booking.html">
+                        <div class="book-text">
+                            <button class="book">Book Groups</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="infowrapper">
+                <button onclick="toggleBegin()">Begginer</button>
+                <div class="hide" id="begginerbutton">
+                    <ul class="info">
+                        <li>
+                            <h1>Begginer</h1>
+                        </li>
+                        <li>
+                            <p>This Rafting course is good for everybody who are 12 years old or older.</p>
+                        </li>
+
+                        <div class="inner">
+                            <li>
+                                <h3>Avariable Boats:</h3>
+                            </li>
+                            <ul class="boats">
+                                <li>&starf;Small: 1~4 people</li>
+                                <li>&starf;Medium: 5~8 people</li>
+                                <li>&starf;Large: 9~12 people</li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+
+
+                <button onclick="toggleInt()">Intermediate</button>
+                <div class="hide" id="intbutton">
+                    <ul class="info">
+                        <li>
+                            <h1>Intermediate</h1>
+                        </li>
+                        <li>
+                            <p>This Rafting course is good for experianced in rafting who are 14 years old or older.</p>
+                        </li>
+
+                        <div class="inner">
+                            <li>
+                                <h3>Avariable Boats:</h3>
+                            </li>
+                            <ul class="boats">
+                                <li>&starf;Small: 1~4 people</li>
+                                <li>&starf;Medium: 5~8 people</li>
+                                <li>&starf;Large: 9~12 people</li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+
+                <button onclick="toggleAdvance()">Advanced</button>
+                <div class="hide" id="advancedbutton">
+                    <ul class="info">
+                        <li>
+                            <h1>Advanced</h1>
+                        </li>
+                        <li>
+                            <p>This Rafting course is good for expert in rafting who are 16 years old or older.</p>
+                        </li>
+
+                        <div class="inner">
+                            <li>
+                                <h3>Avariable Boats:</h3>
+                            </li>
+                            <ul class="boats">
+                                <li>&starf;Small: 1~4 people</li>
+                                <li>&starf;Medium: 5~8 people</li>
+
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+
+                <button onclick="toggleGroup()">Groups</button>
+                <div class="hide" id="groupbutton">
+                    <ul class="info">
+                        <li>
+                            <h1>Groups</h1>
+                        </li>
+                        <li>
+                            <p>More than 8 people are counted as a group.</p>
+                        </li>
+
+                        <div class="inner">
+                            <li>
+                                <h3>Avariable Boats:</h3>
+                            </li>
+                            <ul class="boats">
+                                <li>&starf;Small: 1~4 people</li>
+                                <li>&starf;Medium: 5~8 people</li>
+                                <li>&starf;Large: 9~12 people</li>
+                                <li class="emp">&ast; In Advanced course, Large boat is not avariable due to safety.
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div id="footerWrapper">
+            <footer>
+                &copy; Kisuk Jeong &bullet;<span id="date"></span>
+            </footer>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+
+
+</body>
+
+</html>

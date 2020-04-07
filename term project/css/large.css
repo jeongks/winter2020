@@ -1,0 +1,60 @@
+@media only screen and (min-width: 801px){
+
+    /* BANNER */
+    #text-block {
+        font-size: 1vw;
+    }
+
+    /* WEATHER */
+    #forecastwrapper {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #forecastwrapper h5 {
+        font-size: 1.3rem;
+    }
+
+    /* IMAGES */
+    .mainbody {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 90%;
+        margin: 0 5%;
+    }
+    #bookingbody {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .book-text, .review-text {
+        font-size: 1rem;
+    }
+
+    .book-text:hover, .review-text:hover {
+        transform: scale(1.15);
+        box-shadow: none;
+    }
+
+    /* IFRAME */
+    iframe {
+        min-height: 180px;
+    }
+
+    /* RAFTING PAGE */
+    #infowrapper {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+
+    /* TRAVELING PAGE */
+    /* GRID ROW SPAN */
+    #trail {
+        grid-column: 1 / 2;
+    }
+    #camp {
+        grid-column: 3 / 4;
+    }
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0, viewport-fit=cover">
+    <title>Booking: Salmon River Adventure</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Inria+Sans|Noto+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+
+    <script type="text/javascript" src="js/menuToggle.js" defer></script>
+    
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="headerWrapper">
+            <header class="clearfix">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <h1 id="sitename">Salmon River Adventure</h1>
+                <h2 id="siteslogan">Soak in Nature</h2>
+            </header>
+        </div>
+
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()" id="navbutton">&#9776;</button>
+                <ul class="hide" id="mainNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rafting.html">Rafting</a></li>
+                    <li><a href="traveling.html">Traveling</a></li>
+                    <li class="active"><a href="booking.html">Booking</a></li>
+                    <li><a href="finding.html">Finding</a></li>
+                    
+
+                </ul>
+            </nav>
+        </div>
+        <main class="clearfix">
+            <div id="bannercontainer">
+                <div id="banner">
+                    <picture>
+                        <source media="(max-width: 320px)" srcset="images/banner.jpg">
+                        <source media="(max-width: 800px)" srcset="images/bannermedium.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/bannerlarge.jpg">
+                        <img src="images/bannerlarge.jpg" alt="Salmon River">
+                    </picture>
+
+                </div>
+                <div id="text-block">
+                    <p>Photo Credit: Morgan Tilton &sol; Image src: <a
+                            href="//www.rei.com/blog/paddle/what-the-middle-fork-of-the-salmon-river-reveals-about-our-public-lands"
+                            target="_blank">rei.com</a></p>
+                </div>
+            </div>
+            <div id="forecastwrapper">
+                <h5>5 Days weather in Salmon River</h5>
+                <div id="forecast"></div>
+            </div>
+            <div class="mainbody" id="bookingbody">
+                <div class="container">
+                    <div id="rafting">
+                        <button onclick="toggleBookB()" id="beginnerbookbtn">Book Begginer Rafting</button>
+                        <div class="hide" id="beginnerrafting">
+                            <section>
+                                <h1>Begginer Rafting</h1>
+                                <form method="get" action="confirm.html">
+                                    <fieldset>
+                                        <legend>Customer Information</legend>
+                                        <label class="top">First Name&ast;<input type="text" minlength="1" name="fname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Last Name&ast;<input type="text" minlength="1" name="lname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Email<input type="email" name="email"
+                                                placeholder="someone@gmail.com"></label>
+                                        <label class="top">Phone Number<input type="tel" name="phonenumber"
+                                                placeholder="xxxxxxxxxx" required></label>
+                                        <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Book Activity</legend>
+                                        <h2>Begginer Course</h2>
+                                        <label class="top">Arrival Date<input type="date" name="arrivaldate"
+                                                required></label>
+                                        <label class="top">Boat<input list="boattype" name="boattype" required></label>
+                                        <datalist id="boattype">
+                                            <option value="Small">$100 (1~4 people)</option>
+                                            <option value="Medium">$120 (5~8 people)</option>
+                                            <option value="Large">$140 (9~12 people)</option>
+                                        </datalist>
+                                        <p></p>
+                                        <label calss="top">Adult<input type="number" name="adult" min=0 max=100 required></label>
+                                        <p></p>
+                                        <label calss="top">Child<input type="number" name="child" min=0 max=100 required></label>
+                                        <p></p>
+                                    </fieldset>
+                                    <input type="submit" value="Make Payment" class="submitbtn">
+                                </form>
+                            </section>
+                        </div>
+                        <button onclick="toggleBookI()" id="intbookbtn">Book Intermediate Rafting</button>
+                        <div class="hide" id="intermediaterafting">
+                            <section>
+                                <h1>Intermediate Rafting</h1>
+                                <form method="get" action="confirm.html">
+                                    <fieldset>
+                                        <legend>Customer Information</legend>
+                                        <label class="top">First Name&ast;<input type="text" minlength="1" name="fname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Last Name&ast;<input type="text" minlength="1" name="lname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Email<input type="email" name="email"
+                                                placeholder="someone@gmail.com"></label>
+                                        <label class="top">Phone Number<input type="tel" name="phonenumber"
+                                                placeholder="xxxxxxxxxx" required></label>
+                                        <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Book Activity</legend>
+                                        <h2>Intermediate Course</h2>
+                                        <label class="top">Arrival Date<input type="date" name="arrivaldate"
+                                                required></label>
+                                        <label class="top">Boat<input list="boattype" name="boattype" required></label>
+                                        <p></p>
+                                        <label calss="top">Adult<input type="number" name="adult" min=0 max=100 required></label>
+                                        <p></p>
+                                        <label calss="top">Child<input type="number" name="child" min=0 max=100 required></label>
+                                        <p></p>
+                                    </fieldset>
+                                    <input type="submit" value="Make Payment" class="submitbtn">
+                                </form>
+                            </section>
+                        </div>
+                        <button onclick="toggleBookA()" id="advancedbookbtn">Book Advanced Rafting</button>
+                        <div class=hide id="advancedrafting">
+                            <section>
+                                <h1>Advanced Rafting</h1>
+                                <form method="get" action="confirm.html">
+                                    <fieldset>
+                                        <legend>Customer Information</legend>
+                                        <label class="top">First Name&ast;<input type="text" minlength="1" name="fname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Last Name&ast;<input type="text" minlength="1" name="lname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Email<input type="email" name="email"
+                                                placeholder="someone@gmail.com"></label>
+                                        <label class="top">Phone Number<input type="tel" name="phonenumber"
+                                                placeholder="xxxxxxxxxx" required></label>
+                                        <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Book Activity</legend>
+                                        <h2>Advanced Course</h2>
+                                        <label class="top">Arrival Date<input type="date" name="arrivaldate"
+                                                required></label>
+                                        <label class="top">Boat<input list="aboattype" name="boattype" required></label>
+                                        <datalist id="aboattype">
+                                            <option value="Small">$120 (1~4 people)</option>
+                                            <option value="Medium">$140 (5~8 people)</option>
+                                        </datalist>
+                                        <p></p>
+                                        <label calss="top">Adult<input type="number" name="adult" min=0 max=100 required></label>
+                                        <p></p>
+                                        <label calss="top">Child<input type="number" name="child" min=0 max=100 required></label>
+                                        <p></p>
+                                    </fieldset>
+                                    <input type="submit" value="Make Payment" class="submitbtn">
+                                </form>
+                            </section>
+                        </div>
+                        <button onclick="toggleBookG()" id="groupbookbtn">Book Group Rafting</button>
+                        <div class="hide" id="grouprafting">
+                            <section>
+                                <h1>Group Rafting</h1>
+                                <form method="get" action="confirm.html">
+                                    <fieldset>
+                                        <legend>Customer Information</legend>
+                                        <label class="top">First Name&ast;<input type="text" minlength="1" name="fname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Last Name&ast;<input type="text" minlength="1" name="lname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Email<input type="email" name="email"
+                                                placeholder="someone@gmail.com"></label>
+                                        <label class="top">Phone Number<input type="tel" name="phonenumber"
+                                                placeholder="xxxxxxxxxx" required></label>
+                                        <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Book Activity</legend>
+                                        <h2>Intermediate Course</h2>
+                                        <label class="top">Arrival Date<input type="date" name="arrivaldate"></label>
+                                        <label class="top">Course<input list="coursetype" name="boattype"></label>
+                                        <datalist id="coursetype">
+                                            <option value="Begginer">For Anyone</option>
+                                            <option value="Intermediate">For experienced in rafting</option>
+                                        </datalist>
+                                        <p></p>
+                                        <label calss="top">Adult ($10 per)<input type="number" name="adult"min=9 max=100 required></label>
+                                        <p></p>
+                                        <label calss="top">Child ($7 per)<input type="number" name="child"min=0 max=100 required></label>
+                                        <p></p>
+                                    </fieldset>
+                                    <input type="submit" value="Make Payment" class="submitbtn">
+                                </form>
+                            </section>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="container">
+                    <div id="trailservice">
+                        <button onclick="toggleservice()" id="safeservice">Book Service</button>
+                        <div class="hide" id="service">
+                            <section>
+                                <h1>Trail Safety Service</h1>
+                                <form method="get" action="confirm.html">
+                                    <fieldset>
+                                        <legend>Customer Information</legend>
+                                        <label class="top">First Name&ast;<input type="text" minlength="1" name="fname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Last Name&ast;<input type="text" minlength="1" name="lname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Email<input type="email" name="email"
+                                                placeholder="someone@gmail.com"></label>
+                                        <label class="top">Phone Number<input type="tel" name="phonenumber"
+                                                placeholder="xxxxxxxxxx" required></label>
+                                        <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Book Service</legend>
+                                        <h2>Safety Service</h2>
+                                        <label class="top">Arrival Date<input type="date" name="arrivaldate"
+                                                required></label>
+                                        <label class="top">Service<input list="service" name="service"></label>
+                                        <datalist id="service">
+                                            <option value="Safety Service">$120 ($100 deposit) &ast;when service is not
+                                                called you will get deposit back.</option>
+                                        </datalist>
+                                        <p></p>
+                                        <label calss="top">Adult<input type="number" name="adult" min=0 max=100 required></label>
+                                        <p></p>
+                                        <label calss="top">Child<input type="number" name="child" min=0 max=100 required></label>
+                                        <p></p>
+                                    </fieldset>
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div id="trip">
+                        <button onclick="toggleBookt1()" id="onedaybook">Book 1Day Package</button>
+                        <div class="hide" id="onedaytrip">
+                            <section>
+                                <h1>1Day Package</h1>
+                                <form method="get" action="confirm.html">
+                                    <fieldset>
+                                        <legend>Customer Information</legend>
+                                        <label class="top">First Name&ast;<input type="text" minlength="1" name="fname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Last Name&ast;<input type="text" minlength="1" name="lname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Email<input type="email" name="email"
+                                                placeholder="someone@gmail.com"></label>
+                                        <label class="top">Phone Number<input type="tel" name="phonenumber"
+                                                placeholder="xxxxxxxxxx" required></label>
+                                        <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Book Activity</legend>
+                                        <h2>1Day Package</h2>
+                                        <label class="top">Arrival Date<input type="date" name="arrivaldate"
+                                                required></label>
+                                        <p></p>
+                                        <label calss="top">Adult ($120 per)<input type="number" name="adult" min=0 max=100 required></label>
+                                        <p></p>
+                                        <label calss="top">Child ($90 per)<input type="number" name="child" min=0 max=100 required></label>
+                                        <p></p>
+                                    </fieldset>
+                                    <input type="submit" value="Make Payment" class="submitbtn">
+                                </form>
+                            </section>
+                        </div>
+                        <button onclick="toggleBookt2()" id="twodaybook">Book 2Day Package</button>
+                        <div class="hide" id="twodaytrip">
+                            <section>
+                                <h1>2Day Package</h1>
+                                <form method="get" action="confirm.html">
+                                    <fieldset>
+                                        <legend>Customer Information</legend>
+                                        <label class="top">First Name&ast;<input type="text" minlength="1" name="fname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Last Name&ast;<input type="text" minlength="1" name="lname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Email<input type="email" name="email"
+                                                placeholder="someone@gmail.com"></label>
+                                        <label class="top">Phone Number<input type="tel" name="phonenumber"
+                                                placeholder="xxxxxxxxxx" required></label>
+                                        <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Book Activity</legend>
+                                        <h2>2Day Package</h2>
+                                        <label class="top">Arrival Date<input type="date" name="arrivaldate"
+                                                required></label>
+                                        <p></p>
+                                        <label calss="top">Adult ($210 per)<input type="number" name="adult" min=0 max=100 required></label>
+                                        <p></p>
+                                        <label calss="top">Child ($170 per)<input type="number" name="child" min=0 max=100 required></label>
+                                    </fieldset>
+                                    <input type="submit" value="Make Payment" class="submitbtn">
+                                </form>
+                            </section>
+                        </div>
+                        <button onclick="toggleBookt3()" id="threedaybook">Book 3Day Package</button>
+                        <div class="hide" id="threedaytrip">
+                            <section>
+                                <h1>3Day Package</h1>
+                                <form method="get" action="confirm.html">
+                                    <fieldset>
+                                        <legend>Customer Information</legend>
+                                        <label class="top">First Name&ast;<input type="text" minlength="1" name="fname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Last Name&ast;<input type="text" minlength="1" name="lname"
+                                                required pattern="[A-Za-z]+"></label>
+                                        <label class="top">Email<input type="email" name="email"
+                                                placeholder="someone@gmail.com"></label>
+                                        <label class="top">Phone Number<input type="tel" name="phonenumber"
+                                                placeholder="xxxxxxxxxx" required></label>
+                                        <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Book Activity</legend>
+                                        <h2>3Day Package</h2>
+                                        <label class="top">Arrival Date<input type="date" name="arrivaldate"
+                                                required></label>
+                                        <p></p>
+                                        <label calss="top">Adult ($300 per)<input type="number" name="adult"min=0 max=100 required></label>
+                                        <p></p>
+                                        <label calss="top">Child ($250 per)<input type="number" name="child"min=0 max=100 required></label>
+                                        <p></p>
+                                    </fieldset>
+                                    <input type="submit" value="Make Payment" class="submitbtn">
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </main>
+        <div id="footerWrapper">
+            <footer>
+                &copy; Kisuk Jeong &bullet;<span id="date"></span>
+            </footer>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+
+
+</body>
+
+</html>

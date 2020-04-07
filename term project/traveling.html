@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0, viewport-fit=cover">
+    <title>Traveling: Salmon River Adventure</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Inria+Sans|Noto+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+
+    <script type="text/javascript" src="js/menuToggle.js" defer></script>
+    <script src="js/weatherfive.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="headerWrapper">
+            <header class="clearfix">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <h1 id="sitename">Salmon River Adventure</h1>
+                <h2 id="siteslogan">Soak in Nature</h2>
+            </header>
+        </div>
+
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()" id="navbutton">&#9776;</button>
+                <ul class="hide" id="mainNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rafting.html">Rafting</a></li>
+                    <li class="active"><a href="traveling.html">Traveling</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="finding.html">Finding</a></li>
+                    
+
+                </ul>
+            </nav>
+        </div>
+        <main class="clearfix">
+            <div id="bannercontainer">
+                <div id="banner">
+                    <picture>
+                        <source media="(max-width: 320px)" srcset="images/raftingbannersmall.jpg">
+                        <source media="(max-width: 800px)" srcset="images/raftingbannermedium.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/raftingbannerlarge.jpg">
+                        <img src="images/raftingbannerlarge.jpg" alt="Whitewater rafting">
+                    </picture>
+
+                </div>
+            </div>
+            <div id="forecastwrapper">
+                <h5>5 Days weather in Salmon River</h5>
+                <div id="forecast"></div>
+            </div>
+            <div class="mainbody">
+                <div class="container" id="trail">
+                    <div id="freetrail">
+                        <h1>67.9 mile trail</h1>
+                        <p>The Salmon River trail is open for every one.</p>
+                        <p>For your safety, <span class="emp">We have Emergency rescue service.</span></p>
+                        <p>&star;It is not required to book service to use trail.</p>
+                        <p>You will receive special compact device that you can put in your bag.</p>
+                        <p>When the service has not been called you will get deposit back.</p>
+                        <p>However, if the devide is damaged by you. it will be charged on your deposit.</p>
+                    </div>
+                    
+                    <a href="booking.html">
+                        <button class="book">Book The Service</button>
+                    </a>
+                    
+                </div>
+                <div class="packageimg">
+                    <img src="images/trail.jpg" alt="trail">
+                </div>
+                <div class="container" id="camp">
+                    <div id="camping">
+                        <h1>Camping Traveling</h1>
+                        <p>following the Salmon River and enjoying the river's day and night.</p>
+                        <ul>
+                            <li>
+                                <h3>Length of Traveling:</h3>
+                            </li>
+                            <li><span class="bold">1Day Package:</span> 2 days &amp; 1 night</li>
+                            <button onclick="toggleOne()" class="package">More info</button>
+                            <div class="hide" id="oneday">
+                                <ul>
+                                    <div class="day">
+                                        <li><h5>Day1:</h5></li>
+                                        <li>Orientation &amp; Basic training</li>
+                                        <li>Heading to the Camp</li>
+                                        <li>Setup tents</li>
+                                        <li>Setup fire</li>
+                                        <li>Setup a telescope</li>
+                                    </div>
+                                    <div class="night">
+                                        <li><h5>Night1:</h5></li>
+                                        <li>Dining by campfire</li>
+                                        <li>Reading stars</li>
+                                        <li>tales of Salmon River</li>
+                                    </div>
+                                    <div class="day">
+                                        <li><h5>Day2:</h5></li>
+                                        <li>Breakfast</li>
+                                        <li>Packing all stuffs</li>
+                                        <li>Heading while adventuring the forest</li>
+                                        <li>Learning eatable plants in the forest</li>
+                                        <li>Learning medical plants in the forest</li>
+                                        <li>Learning servival skills in the woods</li>
+                                        <li>Lunch at the Adventure</p></li>
+                                    </div>
+                                </ul>
+
+                            </div>
+                            <li><span class="bold">2Day Package:</span> 3 days &amp; 2 nights</li>
+                            <button onclick="toggleTwo()" class="package">More Info</button>
+                            <div class="hide" id="twoday">
+                                <ul>
+                                    <div class="day">
+                                        <li><h5>Day1:</h5></li>
+                                        <li>Orientation &amp; Basic training</li>
+                                        <li>Heading to the Camp</li>
+                                        <li>Setup tents</li>
+                                        <li>Setup fire</li>
+                                        <li>Setup a telescope</li>
+                                    </div>
+                                    <div class="night">
+                                        <li><h5>Night1:</h5></li>
+                                        <li>Dining by campfire</li>
+                                        <li>Reading stars</li>
+                                        <li>tales of Salmon River</li>
+                                    </div>
+                                    <div class="day">
+                                        <li><h5>Day2:</h5></li>
+                                        <li>Breakfast</li>
+                                        <li>Packing all stuffs</li>
+                                        <li>Moving to next camp point while adventuring the forest</li>
+                                        <li>Learning eatable plants in the forest</li>
+                                        <li>Learning medical plants in the forest</li>
+                                        <li>Learning servival skills in the woods</li>
+                                        <li>Lunch in the woods</p></li>
+                                    </div>
+                                    <div class="night">
+                                        <li><h5>Night2:</h5></li>
+                                        <li>Night trail to head back</li>
+                                        <li>Setup camp</li>
+                                        <li>Dining by fire</li>
+                                        <li>Reading stars</li>
+                                    </div>
+                                    <div class="day">
+                                        <li><h5>Day3:</h5></li>
+                                        <li>Heading back</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <li><span class="bold">3Day Package:</span> 4 days &amp; 3 nights</li>
+                            <button onclick="toggleThree()" class="package">More Info</button>
+                            <div class="hide" id="threeday">
+                                <ul>
+                                    <div class="day">
+                                        <li><h5>Day1:</h5></li>
+                                        <li>Orientation &amp; Basic training</li>
+                                        <li>Heading to the Camp</li>
+                                        <li>Setup tents</li>
+                                        <li>Setup fire</li>
+                                        <li>Setup a telescope</li>
+                                    </div>
+                                    <div class="night">
+                                        <li><h5>Night1:</h5></li>
+                                        <li>Dining by campfire</li>
+                                        <li>Reading stars</li>
+                                        <li>tales of Salmon River</li>
+                                    </div>
+                                    <div class="day">
+                                        <li><h5>Day2:</h5></li>
+                                        <li>Breakfast</li>
+                                        <li>Packing all stuffs</li>
+                                        <li>Moving to next camp point while adventuring the forest</li>
+                                        <li>Learning eatable plants in the forest</li>
+                                        <li>Learning medical plants in the forest</li>
+                                        <li>Learning servival skills in the woods</li>
+                                        <li>Lunch in the woods</p></li>
+                                    </div>
+                                    <div class="night">
+                                        <li><h5>Night2:</h5></li>
+                                        <li>Night trail to next camp</li>
+                                        <li>Setup camp</li>
+                                        <li>Dining by fire</li>
+                                        <li>Reading stars</li>
+                                    </div>
+                                    <div class="day">
+                                        <li><h5>Day3:</h5></li>
+                                        <li>Fishing</li>
+                                        <li>Breakfast</li>
+                                        <li>Adventure Forest</li>
+                                        <li>Packing</li>
+                                    </div>
+                                    <div class="night">
+                                        <li><h5>Night3:</h5></li>
+                                        <li>Heading to next camp</li>
+                                        <li>Setup camp</li>
+                                        <li>Dining by fire</li>
+                                    </div>
+                                    <div class="day">
+                                        <li><h5>Day4:</h5></li>
+                                        <li>Breakfast</li>
+                                        <li>Packing</li>
+                                        <li>Load all packages to a shutle</li>
+                                        <li>Rafting back to the Adventure</li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <a href="booking.html">
+                        
+
+                        <button class="book">Book Traveling</button>
+
+                        
+                    </a>
+                    
+
+                </div>
+                <div class="packageimg">
+                    <img src="images/tripfull.jpg" alt="family in forest">
+                </div>
+                
+
+
+                
+        </main>
+        <div id="footerWrapper">
+            <footer>
+                &copy; Kisuk Jeong &bullet;<span id="date"></span>
+            </footer>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+
+
+</body>
+
+</html>
