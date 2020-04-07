@@ -1,5 +1,23 @@
 @media only screen and (min-width: 801px){
+    /* HEADER */
+    header h1 {
+        font-family: 'Noto Serif', serif;
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    header h2 {
+        font-family: 'Noto Serif', serif;
+        font-size: 1rem;
+        margin-block-end: 0;
+        margin-top: 0;
+    }
+    /* LOGO */
+    header img {
+        width: 90px;
+    }
 
+    
     /* BANNER */
     #text-block {
         font-size: 1vw;
@@ -27,6 +45,7 @@
 
     #findingbody {
         grid-template-columns: 1fr 1fr;
+        
     }
 
     .book-text, .review-text {
@@ -60,5 +79,21 @@
     }
     #camp {
         grid-column: 3 / 4;
+    }
+
+    /* FINDING PAGE */
+    #findingmap, #employee {
+        background-color: #f4f4f8;
+    }
+    #employee img {
+        width: 80%;
+        margin: 3px 10%;
+        margin-bottom: 0;
+        
+    }
+
+    #information {
+        width: 80%;
+        margin: 0 10%;
     }
 }
