@@ -84,21 +84,16 @@
           
           divinput.innerHTML = ''+ result;
       }
+      const input1 = document.getElementById('input3').value;
+      const input2 = document.getElementById('input4').value;
+      const divinput = document.getElementById('input3div');
+      const x = parseInt(input1);
+      const y = parseInt(input2);
       const subtract = (x,y) => {
-          const input1 = document.getElementById('input3').value;
-          const input2 = document.getElementById('input4').value;
-          const divinput = document.getElementById('input3div');
-          x = parseInt(input1);
-          y = parseInt(input2);
           divinput.innerHTML = ''+ x-y;
       }
     
       const multiply = (x,y) => {
-        const input1 = document.getElementById('input3').value;
-          const input2 = document.getElementById('input4').value;
-          const divinput = document.getElementById('input3div');
-          x = parseInt(input1);
-          y = parseInt(input2);
           divinput.innerHTML = ''+ x*y;
       }
   </script>
