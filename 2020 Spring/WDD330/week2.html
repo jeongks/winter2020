@@ -34,8 +34,11 @@
         
         <h3>03</h3>
         <input type="text" id="input3">
+        <button id="addBtn" onclick="input3Add()">+</button>
+        <button id="subBtn" onclick="subtract">-</button>
+        <button id="multBtn" onclick="multiply">*</button>
         <input type="text" id="input4">
-        <button id="input3Btn" onclick="input3Add()">+</button>
+        
         <div id="input3div"></div>
 
     
@@ -62,7 +65,7 @@
           const divinput = document.getElementById('input2div');
           
           const inputNumber = parseInt(input);
-          if (inputNumber != NaN){
+          if (inputNumber !== NaN){
               let result = 0;
               for (let i = 1; i <=inputNumber; i++){
                   result += i;
@@ -80,6 +83,23 @@
           const result = inputNumber1 + inputNumber2;
           
           divinput.innerHTML = ''+ result;
+      }
+      const subtract = (x,y) => {
+          const input1 = document.getElementById('input3').value;
+          const input2 = document.getElementById('input4').value;
+          const divinput = document.getElementById('input3div');
+          x = parseInt(input1);
+          y = parseInt(input2);
+          return x - y;
+      }
+    
+      const multiply = (x,y) => {
+        const input1 = document.getElementById('input3').value;
+          const input2 = document.getElementById('input4').value;
+          const divinput = document.getElementById('input3div');
+          x = parseInt(input1);
+          y = parseInt(input2);
+          return x * y;
       }
   </script>
 
