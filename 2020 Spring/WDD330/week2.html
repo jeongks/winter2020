@@ -35,8 +35,8 @@
         <h3>03</h3>
         <input type="text" id="input3">
         <button id="addBtn" onclick="input3Add()">+</button>
-        <button id="subBtn" onclick="subtract">-</button>
-        <button id="multBtn" onclick="multiply">*</button>
+        <button id="subBtn" onclick="subtract()">-</button>
+        <button id="multBtn" onclick="multiply()">*</button>
         <input type="text" id="input4">
         
         <div id="input3div"></div>
@@ -89,11 +89,11 @@
       const divinput = document.getElementById('input3div');
       const x = parseInt(input1);
       const y = parseInt(input2);
-      const subtract = (x,y) => {
+      const subtract = () => {
           divinput.innerHTML = ''+ x-y;
       }
     
-      const multiply = (x,y) => {
+      const multiply = () => {
           divinput.innerHTML = ''+ x*y;
       }
   </script>
